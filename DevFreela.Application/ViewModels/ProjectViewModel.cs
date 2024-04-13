@@ -10,10 +10,12 @@ namespace DevFreela.Application.ViewModels
 	{
 		public ProjectViewModel(string title, DateTime? createdAt)
 		{
+			Id = Id;
 			Title = title;
 			CreatedAt = createdAt;
 		}
 
+		public int Id { get; set; }
 		public string Title { get; private set; }
 		public DateTime? CreatedAt { get; private set;}
     }
